@@ -1,0 +1,18 @@
+<div>
+    <h2>{{post.title}}</h2>
+    <p>{{post.username}} posted on {{post.createdAt}}</p>
+    <p>{{post.body}}</p>
+</div>
+
+
+{{#if post.comments}}
+
+{{/if}}
+
+<form id="comment-form">
+<label for="comment-body">Comment</label>
+<textarea name="comment-body"></textarea>
+<button type="submit">Submit</button>
+</form>
+
+<script src="/public/comment.js"></script>
